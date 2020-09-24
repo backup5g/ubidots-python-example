@@ -1,8 +1,10 @@
 import paho.mqtt.client as mqttClient
 import time
 
-from ubidots import connect, publish, subscribe
-from callbacks import connected
+from connect import connect, connected
+from publish import publish
+from subscribe import subscribe
+
 from env import (
   BROKER_ENDPOINT,
   PORT,
@@ -15,7 +17,7 @@ from env import (
 
 
 def create_menu():
-  print('-------ESCOLHA UMA OPÇÃO-------')
+  print('---------ESCOLHA UMA OPÇÃO----------')
   print('(1) Enviar informação dispositivo 01')
   print('(2) Enviar informação dispositivo 02')
   print('(3) Enviar informação dispositivo 03')

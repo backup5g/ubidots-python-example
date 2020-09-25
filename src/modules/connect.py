@@ -1,7 +1,7 @@
 import time
 
-from publish import on_publish
-from subscribe import on_message, on_subscribe
+from modules.publish import on_publish
+from modules.subscribe import on_message, on_subscribe
 
 connected = False
 

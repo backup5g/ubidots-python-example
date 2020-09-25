@@ -1,9 +1,9 @@
 import paho.mqtt.client as mqttClient
 import time
 
-from connect import connect, connected
-from publish import publish
-from subscribe import subscribe
+from modules.connect import connect, connected
+from modules.publish import publish
+from modules.subscribe import subscribe
 
 from env import (
   BROKER_ENDPOINT,
@@ -14,7 +14,6 @@ from env import (
   DEVICE_LABEL,
   VARIABLE_LABELS,
 )
-
 
 def create_menu():
   print('---------ESCOLHA UMA OPÇÃO----------')
